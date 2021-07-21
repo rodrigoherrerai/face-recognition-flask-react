@@ -18,7 +18,7 @@ const WebcamCapture = () => {
     axios.post('http://127.0.0.1:5000/api', {data : imageSrc})
     	  .then(res => {
       	  console.log(`response = ${res.data}`)
-      	  setName(res.data)
+      	  this.setName(res.data)
     })
     	  .catch(error => {
       	  console.log(`error = ${error}`)
